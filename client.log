@@ -1,0 +1,299 @@
+     [echo] call ant start-client --> client.PeopleClient in build
+     [echo] **STEP 1**
+     [echo]  WSDL url: https://sleepy-falls-14531.herokuapp.com/ws/people?wsdl
+     [echo] **STEP 2**
+     [java]  
+     [java] ===========================================================================
+     [java] Request #1: readPersonList
+     [java]  
+     [java] RESPONSE: 
+     [java] ******************
+     [java] id       : 1
+     [java] firstname: Pippo
+     [java] lastname : Chan
+     [java] birthdate : 1978-09-01
+     [java] -----------
+     [java] id               : 3
+     [java] dateRegistered   : 1998-12-11
+     [java] measureType      : height
+     [java] value            : 75
+     [java] measureValueType : integer
+     [java] -----------
+     [java] id               : 5
+     [java] dateRegistered   : 2015-10-11
+     [java] measureType      : weight
+     [java] value            : 100
+     [java] measureValueType : Int
+     [java] ******************
+     [java] id       : 2
+     [java] firstname: Chuck
+     [java] lastname : Norris
+     [java] birthdate : 1978-09-01
+     [java] ******************
+     [java] id       : 3
+     [java] firstname: Pappo
+     [java] lastname : Pippo
+     [java] birthdate : 1978-09-01
+     [java] ******************
+     [java] id       : 2603
+     [java] firstname: test
+     [java] lastname : Palleto
+     [java] birthdate : 1979-12-11
+     [java] ******************
+     [java] id       : 2703
+     [java] firstname: Pavel
+     [java] lastname : Kucherbaev
+     [java] birthdate : 1987-03-02
+     [java] ******************
+     [java] id       : 2753
+     [java] firstname: test
+     [java] lastname : Palleto
+     [java] birthdate : 1987-03-01
+     [java] ******************
+     [java] id       : 2803
+     [java] firstname: test
+     [java] lastname : Palleto
+     [java] birthdate : 1987-03-01
+     [java] ******************
+     [java] id       : 2853
+     [java] firstname: test
+     [java] lastname : Palleto
+     [java] birthdate : 1987-03-01
+     [java] ******************
+     [java] id       : 2953
+     [java] firstname: test
+     [java] lastname : Palleto
+     [java] birthdate : 1987-03-01
+     [java] ******************
+     [java] id       : 3003
+     [java] firstname: test
+     [java] lastname : Palleto
+     [java] birthdate : 1987-03-01
+     [java] ******************
+     [java] id       : 3053
+     [java] firstname: test
+     [java] lastname : Palleto
+     [java] birthdate : 1987-03-01
+     [java] ******************
+     [java] id       : 3103
+     [java] firstname: test
+     [java] lastname : Palleto
+     [java] birthdate : 1987-03-01
+     [java] ******************
+     [java] id       : 3253
+     [java] firstname: Chuck
+     [java] lastname : Norris
+     [java] birthdate : 1944-12-31
+     [java] -----------
+     [java] id               : 4
+     [java] dateRegistered   : 2014-12-31
+     [java] measureType      : height
+     [java] value            : 180
+     [java] measureValueType : Int
+     [java]  
+     [java] ===========================================================================
+     [java] Request #2: readPerson
+     [java]  
+     [java] REQUEST: 
+     [java] id: 1
+     [java]  
+     [java] RESPONSE: 
+     [java] ******************
+     [java] id       : 1
+     [java] firstname: Pippo
+     [java] lastname : Chan
+     [java] birthdate : 1978-09-01
+     [java] -----------
+     [java] id               : 3
+     [java] dateRegistered   : 1998-12-11
+     [java] measureType      : height
+     [java] value            : 75
+     [java] measureValueType : integer
+     [java] -----------
+     [java] id               : 5
+     [java] dateRegistered   : 2015-10-11
+     [java] measureType      : weight
+     [java] value            : 100
+     [java] measureValueType : Int
+     [java]  
+     [java] ===========================================================================
+     [java] Request #3: updatePerson
+     [java]  
+     [java] Person #1 before the update:
+     [java] ******************
+     [java] id       : 1
+     [java] firstname: Pippo
+     [java] lastname : Chan
+     [java] birthdate : 1978-09-01
+     [java] -----------
+     [java] id               : 3
+     [java] dateRegistered   : 1998-12-11
+     [java] measureType      : height
+     [java] value            : 75
+     [java] measureValueType : integer
+     [java] -----------
+     [java] id               : 5
+     [java] dateRegistered   : 2015-10-11
+     [java] measureType      : weight
+     [java] value            : 100
+     [java] measureValueType : Int
+     [java]  
+     [java] REQUEST: 
+     [java] id: 1
+     [java] firstname: Pippo
+     [java]  
+     [java] RESPONSE:
+     [java] code: 0 OK
+     [java]  
+     [java] Person #1 after the update:
+     [java] ******************
+     [java] id       : 1
+     [java] firstname: Pippo
+     [java] lastname : Chan
+     [java] birthdate : 1978-09-01
+     [java] -----------
+     [java] id               : 3
+     [java] dateRegistered   : 1998-12-11
+     [java] measureType      : height
+     [java] value            : 75
+     [java] measureValueType : integer
+     [java] -----------
+     [java] id               : 5
+     [java] dateRegistered   : 2015-10-11
+     [java] measureType      : weight
+     [java] value            : 100
+     [java] measureValueType : Int
+     [java]  
+     [java] ===========================================================================
+     [java] Request #4: createPerson
+     [java]  
+     [java]  
+     [java] REQUEST: 
+     [java] ******************
+     [java] id       : 0
+     [java] firstname: Chuck
+     [java] lastname : Norris
+     [java] birthdate : 1945-01-01
+     [java] -----------
+     [java] id               : 0
+     [java] dateRegistered   : 2015-01-01
+     [java] measureType      : height
+     [java] value            : 180
+     [java] measureValueType : Int
+     [java]  
+     [java] RESPONSE:
+     [java] id created person: 3303
+     [java]  
+     [java] Created Person
+     [java] ******************
+     [java] id       : 3303
+     [java] firstname: Chuck
+     [java] lastname : Norris
+     [java] birthdate : 1945-01-01
+     [java] -----------
+     [java] id               : 54
+     [java] dateRegistered   : 2015-01-01
+     [java] measureType      : height
+     [java] value            : 180
+     [java] measureValueType : Int
+     [java]  
+     [java] ===========================================================================
+     [java] Request #5: deletePerson
+     [java]  
+     [java] REQUEST: 
+     [java] id: 3253
+     [java]  
+     [java] RESPONSE:
+     [java] readPerson(3253): null
+     [java]  
+     [java] ===========================================================================
+     [java] Request #6: readPersonHistory
+     [java]  
+     [java] REQUEST: 
+     [java] id: 1
+     [java] measureType: weight
+     [java]  
+     [java] -----------
+     [java] id               : 1
+     [java] dateRegistered   : 1998-12-11
+     [java] measureType      : weight
+     [java] value            : 83
+     [java] measureValueType : integer
+     [java] -----------
+     [java] id               : 2
+     [java] dateRegistered   : 1998-12-11
+     [java] measureType      : weight
+     [java] value            : 80
+     [java] measureValueType : integer
+     [java] -----------
+     [java] id               : 5
+     [java] dateRegistered   : 2015-10-11
+     [java] measureType      : weight
+     [java] value            : 100
+     [java] measureValueType : Int
+     [java]  
+     [java] ===========================================================================
+     [java] Request #7: readMeasureTypes
+     [java]  
+     [java]  
+     [java] RESPONSE:
+     [java] height
+     [java] weight
+     [java]  
+     [java] ===========================================================================
+     [java] Request #8: readPersonMeasure
+     [java]  
+     [java] REQUEST: 
+     [java] id: 1
+     [java] measureType: height
+     [java] mid: 3
+     [java]  
+     [java] RESPONSE:
+     [java] -----------
+     [java] id               : 3
+     [java] dateRegistered   : 1998-12-11
+     [java] measureType      : height
+     [java] value            : 75
+     [java] measureValueType : integer
+     [java]  
+     [java] ===========================================================================
+     [java] Request #9: savePersonMeasure
+     [java]  
+     [java] REQUEST: 
+     [java] id: 1
+     [java] -----------
+     [java] id               : 0
+     [java] dateRegistered   : 2015-10-12
+     [java] measureType      : weight
+     [java] value            : 100
+     [java] measureValueType : Int
+     [java]  
+     [java] RESPONSE:
+     [java] id: 55 OK
+     [java]  
+     [java] -----------
+     [java] id               : 55
+     [java] dateRegistered   : 2015-10-12
+     [java] measureType      : weight
+     [java] value            : 100
+     [java] measureValueType : Int
+     [java]  
+     [java] ===========================================================================
+     [java] Request #10: updatePersonMeasure
+     [java]  
+     [java] REQUEST: 
+     [java] id: 1
+     [java] -----------
+     [java] id               : 3
+     [java] dateRegistered   : 1998-12-11
+     [java] measureType      : height
+     [java] value            : 75
+     [java] measureValueType : integer
+     [java]  
+     [java] RESPONSE:
+     [java] -----------
+     [java] id               : 3
+     [java] dateRegistered   : 1998-12-11
+     [java] measureType      : height
+     [java] value            : 75
+     [java] measureValueType : integer
