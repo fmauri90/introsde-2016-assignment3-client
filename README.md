@@ -4,7 +4,7 @@
 
 # Client
 
-URL of my server: [https://secure-refuge-6052.herokuapp.com/](https://secure-refuge-6052.herokuapp.com/)  
+URL of my server: [https://sleepy-falls-14531.herokuapp.com](https://sleepy-falls-14531.herokuapp.com)  
 Server repository: [https://github.com/abonte/introsde-2015-assignment-3-sever](https://github.com/abonte/introsde-2015-assignment-3-server)  
 I worked alone
 
@@ -17,7 +17,7 @@ In order to execute the client you need the following technologies (in the brack
 Then, clone the repository. Run in your terminal:
 
 ```
-git clone https://github.com/abonte/introsde-2015-assignment-3-client && cd introsde-2015-assignment-3-client
+git clone https://github.com/abonte/introsde-2016-assignment3-client && cd introsde-2016-assignment3-client
 ```
 ### Getting Started
 This project use an ant build script to automate the compilation and the execution of specific part of the Java application.  
@@ -29,7 +29,7 @@ ant execute.client
 
 This command performs the following action:
 * download and install ivy (dependency manager) and resolve the dependencies. Ivy and WebContent/WEB-INF/lib/ folders are generated;
-* run wsimport -keep https://secure-refuge-6052.herokuapp.com/ ;
+* run wsimport -keep https://sleepy-falls-14531.herokuapp.com ;
 * create a build directory and compile the code in the src folder. You can find the compiled code in build folder;
 * a log file is generated [client.log](client.log);
 
